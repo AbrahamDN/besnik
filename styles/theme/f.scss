@@ -1,0 +1,79 @@
+@use "theme/colors";
+@use "theme/fonts.scss";
+@use "theme/mq.scss";
+
+* {
+  // box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: fonts.$family-poppins;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: colors.$green;
+  font-size: fonts.$size-sm;
+  @include mq.tablet {
+    font-size: fonts.$size-md;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: fonts.$family-poppins;
+  color: colors.$black;
+  line-height: 1.6rem;
+}
+
+h1 {
+  font-size: fonts.$size-3xl;
+  @include mq.tablet {
+    font-size: fonts.$size-5xl;
+  }
+}
+h2 {
+  font-size: fonts.$size-2xl;
+  @include mq.tablet {
+    font-size: fonts.$size-3xl;
+  }
+}
+h3 {
+  font-size: fonts.$size-xl;
+  @include mq.tablet {
+    font-size: fonts.$size-2xl;
+  }
+}
+h4 {
+  font-size: fonts.$size-lg;
+  @include mq.tablet {
+    font-size: fonts.$size-xl;
+  }
+}
+h5 {
+  font-size: fonts.$size-md;
+  @include mq.tablet {
+    font-size: fonts.$size-lg;
+  }
+}
+h6 {
+  font-size: fonts.$size-sm;
+  @include mq.tablet {
+    font-size: fonts.$size-md;
+  }
+}

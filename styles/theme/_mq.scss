@@ -1,0 +1,26 @@
+$isMobile: true;
+$isTablet: false;
+$isLaptop: false;
+$isDesktop: false;
+
+@mixin tablet {
+  @media only screen and (min-width: 565px) {
+    $isMobile: false;
+    $isTablet: true;
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: 1024px) {
+    $isLaptop: true;
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1440px) {
+    $isDesktop: true;
+    @content;
+  }
+}
