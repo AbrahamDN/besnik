@@ -35,6 +35,6 @@ Use BEM naming conventions:
 
 ## Contributors
 
-[AbrahamDN](https://github.com/AbrahamDN)
-[Zaltick](https://github.com/soniclinkerman)
-[JoseMaster]()
+[AbrahamDN](https://github.com/AbrahamDN) | 
+[Zaltick](https://github.com/soniclinkerman) | 
+JoseMaster
