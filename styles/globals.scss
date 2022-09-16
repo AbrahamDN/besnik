@@ -48,7 +48,8 @@ h5,
 h6 {
   font-family: fonts.$family-poppins;
   color: colors.$black;
-  line-height: 1.6rem;
+  line-height: normal;
+  margin: 0;
 }
 
 h1 {
