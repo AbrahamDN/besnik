@@ -6,6 +6,7 @@ import Container from "../Container/Container";
 import Icon from "../Icon";
 import Image from "next/image";
 import useWindowSize from "../../hooks/useWindowSize";
+import Button from "../Button/Button";
 
 const Header = () => {
   const isTablet = useWindowSize().width < 768;
@@ -24,10 +25,17 @@ const Header = () => {
               profiles to find results 100x faster.
             </p>
 
-            <button className={styles.hero__btn}>
+            {/* <button className={styles.hero__btn}>
               <span>Request demo</span>
               <Icon name="arrow-right" />
-            </button>
+            </button> */}
+
+            <Button
+              className={styles.hero__btn}
+              text={"Request Demo"}
+              btnType="primary"
+              iconType={"arrow-right"}
+            />
           </div>
         </Container>
 
