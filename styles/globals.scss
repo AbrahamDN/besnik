@@ -47,35 +47,47 @@ a {
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   font-family: fonts.$family-poppins;
   color: colors.$black;
   line-height: normal;
   margin: 0;
 }
 
-h1 {
+h1,
+.h1 {
   @include fontSize(fonts.$size-3xl, fonts.$size-4xl, fonts.$size-5xl);
   line-height: 113%;
   margin: 1rem 0;
 }
-h2 {
+h2,
+.h2 {
   @include fontSize(fonts.$size-2xl, fonts.$size-3xl);
 }
-h3 {
+h3,
+.h3 {
   @include fontSize(fonts.$size-xl, fonts.$size-2xl);
 }
-h4 {
+h4,
+.h4 {
   @include fontSize(fonts.$size-lg, fonts.$size-xl);
 }
-h5 {
+h5,
+.h5 {
   @include fontSize(fonts.$size-md, fonts.$size-lg);
 }
-h6 {
+h6,
+.h6 {
   @include fontSize(fonts.$size-sm, fonts.$size-md);
 }
 
