@@ -1,0 +1,23 @@
+@use "../../styles/theme/fonts.scss";
+@use "../../styles/theme/spacing.scss";
+
+.container {
+  max-width: spacing.$container;
+
+  &,
+  &__xs,
+  &__sm {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: spacing.$size-md;
+    padding-right: spacing.$size-md;
+  }
+
+  &__xs {
+    max-width: spacing.$container-xs;
+  }
+
+  &__sm {
+    max-width: spacing.$container-sm;
+  }
+}

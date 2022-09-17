@@ -4,7 +4,7 @@
 
 @mixin fontSize($base: fonts.$size-md, $tablet: $base, $desktop: $tablet) {
   font-size: $base;
-  @include mq.tablet {
+  @include mq.lgMobile {
     font-size: $tablet;
   }
   @include mq.laptop {
@@ -23,11 +23,15 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: fonts.$family-poppins;
+  font-family: fonts.$family-inter;
+  overflow-x: hidden;
 }
 
 html {
   font-size: 10px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
@@ -48,11 +52,14 @@ h5,
 h6 {
   font-family: fonts.$family-poppins;
   color: colors.$black;
-  line-height: 1.6rem;
+  line-height: normal;
+  margin: 0;
 }
 
 h1 {
   @include fontSize(fonts.$size-3xl, fonts.$size-4xl, fonts.$size-5xl);
+  line-height: 113%;
+  margin: 1rem 0;
 }
 h2 {
   @include fontSize(fonts.$size-2xl, fonts.$size-3xl);
@@ -68,4 +75,14 @@ h5 {
 }
 h6 {
   @include fontSize(fonts.$size-sm, fonts.$size-md);
+}
+
+.title {
+  background-color: #f3ec78;
+  background-image: linear-gradient(90deg, #c87c00, #8b3208, #53200f, #53200f);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }

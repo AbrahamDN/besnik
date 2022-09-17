@@ -1,5 +1,19 @@
 @use "theme/colors";
 @use "theme/fonts.scss";
 
-// .container {
-// }
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+
+  main {
+    flex-grow: 2;
+  }
+}

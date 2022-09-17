@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Besnik
+
+Automate the way you search through hashtags and suggested
+profiles to find results 100x faster.
 
 ## Getting Started
 
@@ -12,23 +15,26 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## CONVENTION RULES
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### COMMIT CONVENTIONS
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[Conventional components](https://www.conventionalcommits.org/en/v1.0.0/)
 
-## Learn More
+examples:
 
-To learn more about Next.js, take a look at the following resources:
+- feat: Button component
+- refactor: Button - change variant names
+- fix: missing prop error
+- chore: Component - Remove comments
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### CSS NAMING CONVENTION
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Use BEM naming conventions:
+[BEM](https://getbem.com/naming/)
 
-## Deploy on Vercel
+## Contributors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[AbrahamDN](https://github.com/AbrahamDN) | 
+[Zaltick](https://github.com/soniclinkerman) | 
+JoseMaster

@@ -3,8 +3,16 @@ $isTablet: false;
 $isLaptop: false;
 $isDesktop: false;
 
-@mixin tablet {
+@mixin lgMobile {
   @media only screen and (min-width: 565px) {
+    $isMobile: false;
+    $isTablet: true;
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
     $isMobile: false;
     $isTablet: true;
     @content;
