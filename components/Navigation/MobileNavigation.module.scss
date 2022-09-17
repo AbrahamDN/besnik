@@ -1,0 +1,59 @@
+@use "../../styles/theme/colors.scss";
+@use "../../styles/theme/spacing.scss";
+
+.navigation__wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: spacing.$size-md 0;
+  color: colors.$white;
+
+  .logo {
+    flex: 1;
+    transform: scale(0.8) translateX(-12%);
+  }
+
+  .nav__button {
+    margin-left: spacing.$size-sm;
+    padding: 0;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .nav__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: spacing.$size-xs 0;
+    background: colors.$white;
+    box-shadow: 0px 40px 70px -18px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: colors.$black;
+  }
+
+  .nav__links {
+    list-style: none;
+    margin: 0 spacing.$size-md;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav__item {
+    margin: 0 spacing.$size-md;
+    padding: spacing.$size-xs 0;
+    font-weight: 500;
+    // border-bottom: 1px solid colors.$lightGray;
+  }
+}
