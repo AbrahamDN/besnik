@@ -7,6 +7,7 @@ import Icon from "../Icon";
 import Image from "next/image";
 import useWindowSize from "../../hooks/useWindowSize";
 import Button from "../Button/Button";
+import LinkComponent from "../Link/LinkComponent";
 
 const Header = () => {
   const isTablet = useWindowSize().width < 768;
@@ -19,6 +20,19 @@ const Header = () => {
         <Container>
           <div className={styles.hero__info}>
             <h1 className="title">Tell a better brand story</h1>
+            <LinkComponent
+              text={"Learn More"}
+              url="#"
+              linkType="secondary"
+              iconType={"arrow-right"}
+            />
+
+            <LinkComponent
+              url="#"
+              text={"Learn More"}
+              linkType="primaryry"
+              iconType={"arrow-right"}
+            />
 
             <p>
               Automate the way you search through hashtags and suggested
