@@ -6,6 +6,7 @@ import Logo from "../../public/assets/svgs/logo.svg";
 import Link from "next/link";
 import useWindowSize from "../../hooks/useWindowSize";
 import MobileNavigation from "./MobileNavigation";
+import Button from "../Button/Button";
 
 const Navigation = () => {
   const isTablet = useWindowSize().width < 768;
@@ -31,7 +32,13 @@ const Navigation = () => {
             </li>
           </ul>
 
-          <button className="nav-button">Request Demo</button>
+          <Button
+            className={styles.hero__btn}
+            text={"Request Demo"}
+            btnType="secondary"
+          />
+
+          {/* <button className="nav-button">Request Demo</button> */}
         </nav>
       </Container>
     </div>
