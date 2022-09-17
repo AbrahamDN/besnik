@@ -14,15 +14,3 @@ $size-lg: 2rem;
 $size-md: 1.6rem;
 $size-sm: 1.4rem;
 $size-xs: 1.2rem;
-
-@include mq.tablet {
-  $size-5xl: 6.4rem;
-  $size-4xl: 4rem;
-  $size-3xl: 3rem;
-  $size-2xl: 2.5rem;
-  $size-xl: 2rem;
-  $size-lg: 1.6rem;
-  $size-md: 1.4rem;
-  $size-sm: 1.2rem;
-  $size-xs: 1.2rem;
-}

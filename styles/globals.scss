@@ -4,7 +4,7 @@
 
 @mixin fontSize($base: fonts.$size-md, $tablet: $base, $desktop: $tablet) {
   font-size: $base;
-  @include mq.tablet {
+  @include mq.lgMobile {
     font-size: $tablet;
   }
   @include mq.laptop {
@@ -24,10 +24,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: fonts.$family-inter;
+  overflow-x: hidden;
 }
 
 html {
   font-size: 10px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
