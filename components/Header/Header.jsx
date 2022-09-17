@@ -8,6 +8,7 @@ import Image from "next/image";
 import useWindowSize from "../../hooks/useWindowSize";
 import Button from "../Button/Button";
 import LinkComponent from "../Link/LinkComponent";
+import Gradient from "../Gradient/Gradient";
 
 const Header = () => {
   const isTablet = useWindowSize().width < 768;
@@ -15,7 +16,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Navigation />
-      <span className={styles.header__bg} />
+      <Gradient background={true}/>
+      {/* <span className={styles.header__bg} /> */}
       <div className={styles.header__hero}>
         <Container>
           <div className={styles.hero__info}>
