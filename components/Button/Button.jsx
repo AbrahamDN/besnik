@@ -1,10 +1,16 @@
 import React from "react";
 import buttonStyle from "./Button.module.scss";
 import styles from "../../styles/Home.module.scss";
-const Button = ({ text, btnType }) => {
+import Icon from "../Icon";
+const Button = ({ text, btnType, iconType }) => {
   return (
-    <button className={` ${buttonStyle["btn"]} ${buttonStyle["btn-primary"]}`}>
+    <button
+      className={` ${buttonStyle["btn"]} ${buttonStyle[`btn-${btnType}`]}`}
+    >
       {text}
+      {iconType && (
+        <Icon className={` ${buttonStyle["btn-icon"]}`} name={`${iconType}`} />
+      )}
     </button>
   );
 };

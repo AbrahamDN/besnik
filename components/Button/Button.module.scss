@@ -1,14 +1,28 @@
 
 .btn{
-    width: 200px;
-    padding: 1em;
-    border-radius: 2em;
+
+    padding: 1em 3em;
+    border-radius: 3em;
     cursor: pointer;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+
 }
 
 .btn-primary{
      background: #231A36;
      color: #FFFAF9;
+}
 
+.btn-secondary{
+    background: rgba(255, 255, 255, 0.2);
+     color: #FFFAF9;
+}
+
+.btn-icon{
+    display: flex;
+    margin-left: 1em;
 }
