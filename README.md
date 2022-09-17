@@ -37,4 +37,4 @@ Use BEM naming conventions:
 
 [AbrahamDN](https://github.com/AbrahamDN) | 
 [Zaltick](https://github.com/soniclinkerman) | 
-JoseMaster
+[JoseMaster](https://github.com/innorbitx)
