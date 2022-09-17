@@ -16,8 +16,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Navigation />
-      <Gradient background={true}/>
-      {/* <span className={styles.header__bg} /> */}
+      <Gradient background={true} />
       <div className={styles.header__hero}>
         <Container>
           <div className={styles.hero__info}>
@@ -41,11 +40,6 @@ const Header = () => {
               profiles to find results 100x faster.
             </p>
 
-            {/* <button className={styles.hero__btn}>
-              <span>Request demo</span>
-              <Icon name="arrow-right" />
-            </button> */}
-
             <Button
               className={styles.hero__btn}
               text={"Request Demo"}
@@ -62,7 +56,6 @@ const Header = () => {
               alt=""
               width={718.34}
               height={598.6}
-              // layout="responsive"
             />
           </div>
         )}
