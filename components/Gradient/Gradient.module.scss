@@ -1,0 +1,102 @@
+@use "../../styles/theme/mq.scss";
+
+.gradient {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  background: linear-gradient(-90deg, rgba(143, 179, 255, 1) 0%, rgba(157, 107, 232, 1) 36%, rgba(222, 39, 120, 1) 57%, rgba(176, 61, 226, 1) 80%);
+  z-index: -1;
+}
+
+.gradient::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.gradient__yellow-circle,
+.gradient__orange-circle {
+  position: absolute;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.gradient__yellow-circle {
+  width: 60%;
+  height: 100%;
+  top: 45%;
+  left: -5%;
+  transform: translatex(-10%);
+  background: #fec957;
+  filter: blur(20px);
+}
+
+.gradient__orange-circle {
+  width: 20%;
+  height: 100%;
+  top: 54%;
+  left: 39%;
+  transform: translatex(-5%) scaleX(1.1);
+  background: #ff784f;
+  filter: blur(65px);
+}
+
+.gradient__corner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #e37777 6.83%, #f2554c 42.09%, #fec458 64.55%, #fec957 86.42%, #db788d 101.5%);
+  transform: rotate(-10deg);
+  right: -30%;
+  top: 60%;
+  box-shadow: 0 0 10px 1px #db788d;
+}
+
+.gradient__content {
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  padding: 1.7em 2em;
+}
+
+.gradient__title,
+.gradient__description {
+  color: #ffffff !important;
+}
+
+.gradient__description {
+  margin: auto;
+  max-width: 100%;
+  margin-bottom: 2em;
+}
+
+.gradient__content button {
+  margin: auto;
+}
+
+.gradient--auto {
+  height: auto !important;
+}
+
+.gradient--relative {
+  position: relative;
+  z-index: 1;
+}
+
+.gradient--absolute {
+  position: absolute;
+}
+
+@include mq.laptop {
+  .gradient {
+    height: 60vh;
+  }
+
+  .gradient__description {
+    margin: auto auto 2em auto;
+    max-width: 50%;
+  }
+}
