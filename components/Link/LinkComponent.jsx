@@ -8,7 +8,8 @@ const LinkComponent = ({ text, url, iconType, linkType }) => {
       className={` ${linkStyle["a-link"]} ${linkStyle[`a-${linkType}`]}`}
       href={`${url}`}
     >
-      {text} <Icon className={` ${linkStyle["a-icon"]}`} name={`${iconType}`} />
+      {text}{" "}
+      <Icon className={` ${linkStyle["a--icon"]}`} name={`${iconType}`} />
     </a>
   );
 };

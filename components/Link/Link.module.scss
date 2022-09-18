@@ -1,17 +1,23 @@
-.a-link{
-    font-weight: bold;
-    display: flex;
+.a-link {
+  font-weight: bold;
+  display: flex;
 }
 
-.a-primary{
-    color: #42424A;
+.a__primary {
+  color: #42424a;
 }
-.a-secondary{
-    color: #B33CDB;
+.a__secondary {
+  color: #b33cdb;
 }
 
-.a-icon{
-    display: flex;
-    margin-left: .5em;
-    align-self: center;
+.a--icon {
+  display: flex;
+  margin-left: 0.5em;
+  align-self: center;
+}
+
+@media only screen and (max-width: 565px) {
+  .a-link {
+    justify-content: center;
+  }
 }
