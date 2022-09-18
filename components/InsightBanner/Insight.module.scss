@@ -1,0 +1,16 @@
+@use "../../styles/theme/colors.scss";
+@use "../../styles/theme/spacing.scss";
+
+.insight {
+  & > span {
+    display: block;
+  }
+
+  &__number {
+    color: colors.$white;
+  }
+
+  &__label {
+    color: colors.$lightGreen;
+  }
+}

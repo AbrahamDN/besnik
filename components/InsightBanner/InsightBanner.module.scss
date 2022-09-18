@@ -1,0 +1,47 @@
+@use "../../styles/theme/colors.scss";
+@use "../../styles/theme/spacing.scss";
+@use "../../styles/theme/mq.scss";
+
+.banner {
+  color: colors.$lightGreen;
+  background-color: colors.$darkPurple;
+  text-align: center;
+
+  &__content {
+    padding: 12rem 0;
+  }
+
+  &__header {
+    max-width: 70ch;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: colors.$white;
+    margin-bottom: spacing.$size-md;
+  }
+
+  .insight__container {
+    width: 100%;
+    margin-top: 6rem;
+
+    .insight {
+      &:not(&:last-child) {
+        margin-bottom: spacing.$size-md;
+      }
+    }
+
+    @include mq.tablet {
+      margin-top: 12rem;
+      display: flex;
+      justify-content: space-between;
+
+      .insight {
+        &:not(&:last-child) {
+          margin-bottom: 0;
+          margin-right: spacing.$size-md;
+        }
+      }
+    }
+  }
+}
