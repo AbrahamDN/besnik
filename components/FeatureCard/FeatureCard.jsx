@@ -10,7 +10,7 @@ const FeatureCard = ({ tag, title, description, image, rowReverse }) => {
         rowReverse ? `${cardStyle["reverse"]}` : ""
       }`}
     >
-      <div>
+      <div className={` ${cardStyle["card--main"]}`}>
         <div className={` ${cardStyle["card--header"]}`}>
           <p className={`${cardStyle[`card-tag--${tag.toLowerCase()}`]}`}>
             {tag}
