@@ -1,7 +1,11 @@
 # Besnik
 
+![screenshot](https://i.imgur.com/Rk5DZoD.png)
+
 Automate the way you search through hashtags and suggested
 profiles to find results 100x faster.
+
+[Live preview](https://besnik-six.vercel.app/)
 
 ## Getting Started
 
@@ -35,6 +39,6 @@ Use BEM naming conventions:
 
 ## Contributors
 
-[AbrahamDN](https://github.com/AbrahamDN) | 
-[Zaltick](https://github.com/soniclinkerman) | 
+[AbrahamDN](https://github.com/AbrahamDN) |
+[Zaltick](https://github.com/soniclinkerman) |
 [JoseMaster](https://github.com/innorbitx)
