@@ -1,6 +1,7 @@
 @use "theme/colors";
 @use "theme/fonts.scss";
 @use "theme/mq.scss";
+@use "theme/spacing.scss";
 
 @mixin fontSize($base: fonts.$size-md, $tablet: $base, $desktop: $tablet) {
   font-size: $base;
@@ -110,4 +111,8 @@ h6,
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+section {
+  margin: spacing.$size-4xl 0;
 }

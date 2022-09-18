@@ -1,5 +1,6 @@
 @use "theme/colors";
 @use "theme/fonts.scss";
+@use "theme/spacing.scss";
 
 .page {
   display: flex;
@@ -15,5 +16,18 @@
 
   main {
     flex-grow: 2;
+    text-align: center;
+
+    .service__section {
+      .service__cards {
+        margin-top: spacing.$size-5xl;
+      }
+    }
+
+    .testimonial__section {
+      .testimonial__card {
+        margin-top: spacing.$size-5xl;
+      }
+    }
   }
 }
