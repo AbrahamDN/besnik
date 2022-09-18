@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.scss";
 import Card from "../components/Card/Card";
 import Gradient from "../components/Gradient/Gradient";
 import InsightBanner from "../components/InsightBanner/InsightBanner";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   const insights = [
@@ -40,7 +41,7 @@ export default function Home() {
         />
       </main>
 
-      <footer>Footer</footer>
+      <Footer />
     </div>
   );
 }

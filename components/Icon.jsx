@@ -26,7 +26,14 @@ const Icon = ({
   return (
     <span
       className={`icon ${className}`}
-      style={{ width: !size ? "100%" : size + "px", height: "100%", color }}
+      style={{
+        color,
+        width: !size ? "100%" : size + "px",
+        height: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
       dangerouslySetInnerHTML={{ __html: Icon }}
     />
   );

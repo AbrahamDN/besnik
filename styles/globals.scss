@@ -46,6 +46,16 @@ a {
   text-decoration: none;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid colors.$lightGray;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 h1,
 .h1,
 h2,

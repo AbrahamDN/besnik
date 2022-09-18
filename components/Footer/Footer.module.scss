@@ -1,0 +1,75 @@
+@use "../../styles/theme/colors.scss";
+@use "../../styles/theme/spacing.scss";
+@use "../../styles/theme/mq.scss";
+
+.footer {
+  .footer__wrapper {
+    width: 100%;
+    position: relative;
+    padding: spacing.$size-xl 0;
+  }
+
+  .footer__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: colors.$black;
+
+    .nav__links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      margin: spacing.$size-lg 0;
+      padding: 0;
+    }
+
+    .nav__item {
+      margin: spacing.$size-xs 0;
+      font-weight: 500;
+    }
+
+    .footer__socials {
+      display: flex;
+      align-items: center;
+
+      .social {
+        &:not(&:last-child) {
+          margin-right: spacing.$size-xl;
+        }
+      }
+    }
+
+    @include mq.lgMobile {
+      .nav__links {
+        margin: spacing.$size-lg 0;
+        flex-direction: row;
+      }
+
+      .nav__item {
+        margin: 0 spacing.$size-md;
+      }
+    }
+
+    @include mq.tablet {
+      flex-direction: row;
+
+      .nav__links {
+        margin: 0 spacing.$size-md;
+        flex-direction: row;
+      }
+
+      .nav__item {
+        margin: 0 spacing.$size-md;
+      }
+    }
+  }
+
+  .footer__copy {
+    color: colors.$gray;
+    text-align: center;
+    padding: spacing.$size-xl 0;
+    margin: 0;
+  }
+}
