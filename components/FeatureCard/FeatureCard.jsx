@@ -1,28 +1,24 @@
-import Link from "next/link";
 import React from "react";
 import LinkComponent from "../Link/LinkComponent";
 import cardStyle from "./FeatureCard.module.scss";
+import Image from "next/image";
 
 const FeatureCard = ({ tag, title, description, image, rowReverse }) => {
   return (
     <div
       className={`${cardStyle["card"]} ${
-        rowReverse && `${cardStyle["reverse"]}`
-      } `}
+        rowReverse ? `${cardStyle["reverse"]}` : ""
+      }`}
     >
       <div>
-        <div className={` ${cardStyle["card-header"]}`}>
-          <p
-            className={`
-          ${cardStyle[`card-tag-${tag.toLowerCase()}`]}`}
-          >
+        <div className={` ${cardStyle["card--header"]}`}>
+          <p className={`${cardStyle[`card-tag--${tag.toLowerCase()}`]}`}>
             {tag}
           </p>
-
           <h3>{title}</h3>
         </div>
 
-        <div className={` ${cardStyle["card-body"]}`}>
+        <div className={` ${cardStyle["card--body"]}`}>
           <p>{description}</p>
 
           <LinkComponent
@@ -35,7 +31,7 @@ const FeatureCard = ({ tag, title, description, image, rowReverse }) => {
       </div>
 
       <div>
-        <img src={image} />
+        <Image src={image} alt="" width={350} height={350} />
       </div>
     </div>
   );

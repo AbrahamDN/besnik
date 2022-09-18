@@ -10,7 +10,7 @@
   flex-direction: row-reverse;
 }
 
-.card-header {
+.card--header {
   h3 {
     color: #1f1f26;
   }
@@ -20,24 +20,33 @@
     letter-spacing: 1.5px;
     margin-bottom: 0.25em;
   }
-  .card-tag-influencer {
+  .card-tag--influencer {
     color: #b33cdb;
   }
 
-  .card-tag-community {
+  .card-tag--community {
     color: #fbba33;
   }
-  .card-tag-services {
+  .card-tag--services {
     color: #de2879;
   }
 }
 
-.card-body {
+.card--body {
   p {
     letter-spacing: 1.25px;
     line-height: 2em;
     width: 400px;
     color: #426666;
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 7em;
   }
 }
