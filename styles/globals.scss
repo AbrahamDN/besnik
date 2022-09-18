@@ -115,4 +115,10 @@ h6,
 
 section {
   margin: spacing.$size-4xl 0;
+
+  p {
+    max-width: 54ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
