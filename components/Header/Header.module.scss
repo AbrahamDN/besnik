@@ -1,11 +1,13 @@
 @use "../../styles/theme/colors.scss";
 @use "../../styles/theme/spacing.scss";
 @use "../../styles/theme/mq.scss";
+@use "../../styles/theme/fonts.scss";
 
 .header {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+  margin-bottom: spacing.$size-5xl;
 
   .header__bg {
     display: block;
@@ -18,8 +20,8 @@
   }
 
   .header__hero {
-    height: 100%;
     margin-top: calc(50vh - 12%);
+    margin-bottom: 12rem;
   }
 
   .hero__info {
@@ -27,10 +29,42 @@
     z-index: 2;
   }
 
+  .hero__desc {
+    margin-top: spacing.$size-md;
+    margin-bottom: spacing.$size-2xl;
+  }
+
+  .clients {
+    text-align: center;
+    font-family: fonts.$family-lato;
+    font-weight: 600;
+    color: #b2b7be;
+
+    .brands {
+      margin-top: spacing.$size-xl;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      & > svg {
+        margin: auto;
+        margin-top: spacing.$size-md;
+        transform: scale(0.8) translateX(-12%);
+      }
+    }
+  }
+
+  @include mq.lgMobile {
+    .clients {
+      .brands {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
   @include mq.tablet {
     .header__hero {
-      height: 100%;
       margin-top: 37vh;
+      margin-bottom: spacing.$size-5xl;
       display: flex;
       position: relative;
     }
@@ -42,9 +76,28 @@
       right: -6rem;
       top: -10vh;
     }
+
+    .clients {
+      .brands {
+        margin-top: spacing.$size-3xl;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        & > svg {
+          margin: 0;
+          transform: scale(1) translateX(0);
+        }
+      }
+    }
   }
 
   @include mq.laptop {
+    .header {
+      margin-bottom: 12rem;
+    }
+
     .header__bg {
       height: 60vh;
     }

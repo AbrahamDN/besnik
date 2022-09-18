@@ -1,14 +1,18 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styles from "./Header.module.scss";
 import Navigation from "../Navigation/Navigation";
 import Container from "../Container/Container";
-import Icon from "../Icon";
 import Image from "next/image";
 import useWindowSize from "../../hooks/useWindowSize";
 import Button from "../Button/Button";
-import LinkComponent from "../Link/LinkComponent";
 import Gradient from "../Gradient/Gradient";
+
+import ChaseLogo from "../../public/assets/svgs/brand-chase.svg";
+import AsanaLogo from "../../public/assets/svgs/brand-asana.svg";
+import GoogleLogo from "../../public/assets/svgs/brand-google.svg";
+import BuzzFeedLogo from "../../public/assets/svgs/brand-buzzFeed.svg";
+import TogglLogo from "../../public/assets/svgs/brand-toggl.svg";
+import WallmartLogo from "../../public/assets/svgs/brand-wallmart.svg";
 
 const Header = () => {
   const isTablet = useWindowSize().width < 768;
@@ -16,26 +20,15 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Navigation />
+
       <Gradient background={true} />
+
       <div className={styles.header__hero}>
         <Container>
           <div className={styles.hero__info}>
             <h1 className="title">Tell a better brand story</h1>
-            <LinkComponent
-              text={"Learn More"}
-              url="#"
-              linkType="secondary"
-              iconType={"arrow-right"}
-            />
 
-            <LinkComponent
-              url="#"
-              text={"Learn More"}
-              linkType="primaryry"
-              iconType={"arrow-right"}
-            />
-
-            <p>
+            <p className={styles.hero__desc}>
               Automate the way you search through hashtags and suggested
               profiles to find results 100x faster.
             </p>
@@ -60,6 +53,21 @@ const Header = () => {
           </div>
         )}
       </div>
+
+      <Container>
+        <div className={styles.clients}>
+          <p>SOME OF OUR TRUSTED CLIENTS</p>
+
+          <div className={styles.brands}>
+            <ChaseLogo />
+            <AsanaLogo />
+            <GoogleLogo />
+            <BuzzFeedLogo />
+            <TogglLogo />
+            <WallmartLogo />
+          </div>
+        </div>
+      </Container>
     </header>
   );
 };
