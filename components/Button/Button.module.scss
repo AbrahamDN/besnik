@@ -1,28 +1,26 @@
-
-.btn{
-
-    padding: 1em 3em;
-    border-radius: 3em;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    border: none;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-
+.btn {
+  padding: 1em 3em;
+  border-radius: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
-.btn-primary{
-     background: #231A36;
-     color: #FFFAF9;
+.btn-primary {
+  background: #231a36;
+  color: #fffaf9;
 }
 
-.btn-secondary{
-    background: rgba(255, 255, 255, 0.2);
-     color: #FFFAF9;
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fffaf9;
 }
 
-.btn-icon{
-    display: flex;
-    margin-left: 1em;
+.btn-icon {
+  display: flex;
+  margin-left: 1em;
 }

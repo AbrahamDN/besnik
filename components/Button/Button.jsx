@@ -5,6 +5,7 @@ import Icon from "../Icon";
 const Button = ({ text, btnType, iconType }) => {
   return (
     <button
+      aria-label={`${text}`}
       className={` ${buttonStyle["btn"]} ${buttonStyle[`btn-${btnType}`]}`}
     >
       {text}
