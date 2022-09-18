@@ -1,3 +1,4 @@
+@use "../../styles/theme/fonts.scss";
 .card {
   display: flex;
   align-items: center;
@@ -22,13 +23,16 @@
   }
   .card-tag--influencer {
     color: #b33cdb;
+    font-size: fonts.$size-sm;
   }
 
   .card-tag--community {
     color: #fbba33;
+    font-size: fonts.$size-sm;
   }
   .card-tag--services {
     color: #de2879;
+    font-size: fonts.$size-sm;
   }
 }
 

@@ -1,6 +1,8 @@
+@use "../../styles/theme/colors.scss";
 .a-link {
   font-weight: 500px;
   display: flex;
+  color: colors.$black;
 }
 
 .a__primary {
@@ -15,9 +17,3 @@
   margin-left: 0.5em;
   align-self: center;
 }
-
-// @media only screen and (max-width: 565px) {
-//   .a-link {
-//     justify-content: center;
-//   }
-// }
