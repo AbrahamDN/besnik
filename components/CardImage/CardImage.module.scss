@@ -1,0 +1,51 @@
+@use "../../styles/theme/mq.scss";
+
+.card-image {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.card-image__float-card {
+  background: #ffffff;
+  position: relative;
+  bottom: 4em;
+  width: max-content;
+  margin: auto;
+  padding: 1.5em 1.7em 1.5em 1em;
+  box-shadow: 0px 40px 100px -30px rgba(0, 0, 0, 0.1);
+}
+
+.card-image__float-card__stats {
+  display: flex;
+  background: #fff;
+  gap: 1.5em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+// .card-image__float-count {
+//   text-align: left;
+// }
+
+.card-image__float-card__description {
+  font-size: 1.3rem;
+}
+
+.card-image__float-card__link {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+@include mq.tablet {
+  .card-image {
+    max-width: 30%;
+    position: relative;
+    margin-bottom: 5em;
+  }
+
+  .card-image__float-card {
+    position: absolute;
+    bottom: -4em;
+  }
+}

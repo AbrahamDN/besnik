@@ -1,6 +1,7 @@
 @use "theme/colors";
 @use "theme/fonts.scss";
 @use "theme/spacing.scss";
+@use "theme/mq.scss";
 
 .page {
   display: flex;
@@ -21,6 +22,11 @@
     .service__section {
       .service__cards {
         margin-top: spacing.$size-5xl;
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
 
@@ -29,5 +35,12 @@
         margin-top: spacing.$size-5xl;
       }
     }
+  }
+}
+
+@include mq.tablet {
+  .service__cards {
+    // max-width: 30%;
+    flex-direction: row !important;
   }
 }

@@ -9,6 +9,7 @@ import InsightBanner from "../components/InsightBanner/InsightBanner";
 import Footer from "../components/Footer/Footer";
 import FeatureCard from "../components/FeatureCard/FeatureCard";
 import Testimonial from "../components/Testimonial/Testimonial";
+import CardImage from "../components/CardImage/CardImage";
 
 export default function Home() {
   const insights = [
@@ -44,18 +45,22 @@ export default function Home() {
 
         <InsightBanner title="Search through more than 11 million social media profiles" desc="Heepsy’s search filters help you find exactly what you’re looking for, and our influencer reports provide you with the metrics" insights={insights} />
 
-        <Container size="xs">
-          <section className={styles.service__section}>
+        <Container style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
+          <section className={styles.service__section} style={{ marginBottom: "0rem" }}>
             <h2>Solutions for every need</h2>
 
             <p>Join thousands of marketers and entrepreneurs for a 2-day event at the forefront of social commerce.</p>
 
-            <div className={styles.service__cards}>----- Service cards here -----</div>
+            <div className={styles.service__cards}>
+              <CardImage brand="Rebel clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-1.png" />
+              <CardImage brand="Rebel clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-2.png" />
+              <CardImage brand="Rebel clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-3.png" />
+            </div>
           </section>
         </Container>
 
         <Container style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
-          <section className={styles.testimonial__section}>
+          <section className={styles.testimonial__section} style={{ marginTop: "1.5rem" }}>
             <h2>Happy Clients</h2>
 
             <p>The Marketing Accountability Standards Board (MASB) endorses the definitions, purposes, and constructs of classes</p>
