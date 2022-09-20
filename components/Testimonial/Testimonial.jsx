@@ -6,7 +6,7 @@ const Testimonial = ({ message, name, position, company }) => {
   return (
     <div className={styles.testimonial__container}>
       <div className={styles.testimonial__message__container}>
-        <Icon name="testimonial-brand" color="#fff" size="48" />
+        <Icon name="testimonial-brand" color="#fff" size={48} />
 
         <p className={styles.testimonial__message}>{message}</p>
 
