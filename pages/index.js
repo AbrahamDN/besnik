@@ -52,9 +52,9 @@ export default function Home() {
             <p>Join thousands of marketers and entrepreneurs for a 2-day event at the forefront of social commerce.</p>
 
             <div className={styles.service__cards}>
-              <CardImage brand="Rebel clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-1.png" />
-              <CardImage brand="Rebel clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-2.png" />
-              <CardImage brand="Rebel clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-3.png" />
+              <CardImage brand="Rebel Clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-1.png" buttonText="Learn More" />
+              <CardImage brand="Rebel Clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-2.png" buttonText="Learn More" />
+              <CardImage brand="Rebel Clothing" followers="6.7 M" engagement="56.2 K" img="/assets/card-3.png" buttonText="Learn More" />
             </div>
           </section>
         </Container>

@@ -2,11 +2,12 @@ import Image from "next/image";
 import LinkComponent from "../Link/LinkComponent";
 import styles from "./CardImage.module.scss";
 
-const CardImage = ({ brand, followers, engagement, img }) => {
+const CardImage = ({ brand, followers, engagement, img, buttonText }) => {
   return (
     <div className={styles["card-image"]}>
       <Image src={img} alt="card" width="360" height="300" />
       <div className={styles["card-image__float-card"]}>
+        <h4 className={styles["card-image__float-card__brand"]}>{brand}</h4>
         <div className={styles["card-image__float-card__stats"]}>
           <div>
             <h5 className={styles["card-image__float-count"]}>{followers}</h5>
@@ -19,7 +20,7 @@ const CardImage = ({ brand, followers, engagement, img }) => {
         </div>
 
         <div className={styles["card-image__float-card__link"]}>
-          <LinkComponent text="Learn more" url="#" iconType="arrow-right" linkType="secondary" />
+          <LinkComponent text={buttonText} url="#" iconType="arrow-right" linkType="secondary" />
         </div>
       </div>
     </div>
