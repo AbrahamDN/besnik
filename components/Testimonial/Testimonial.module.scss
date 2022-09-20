@@ -1,0 +1,81 @@
+
+@use "../../styles/theme/mq.scss";
+
+.testimonial__container {
+  display: flex;
+  margin-bottom: 6em;
+  align-items: center;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.testimonial__author {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.testimonial__author__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial__author__name {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.testimonial_author_job {
+  color: #9c988f;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.testimonial__message {
+  margin: 2em 0 2em 0;
+  max-width: 100%;
+  color: #6d6d6d;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 36px;
+  text-align: left;
+}
+
+.testimonial__message__container {
+  width: 100%;
+}
+
+.testimonial__controls {
+  display: flex;
+  gap: 1em;
+}
+
+.testimonial__button {
+  border-radius: 0.1em;
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 0.5em 0.4em;
+}
+
+.testimonial__image {
+  width: 0;
+}
+
+
+@include mq.laptop {
+  
+  .testimonial__message__container {
+    max-width: 45%;
+  }
+
+  .testimonial__message {
+    margin: 2em 0 2em 0;
+  }
+
+  .testimonial__image {
+    width: 100%;
+    max-width: 30%;
+  }
+}
