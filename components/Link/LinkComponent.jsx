@@ -4,12 +4,8 @@ import linkStyle from "./Link.module.scss";
 
 const LinkComponent = ({ text, url, iconType, linkType }) => {
   return (
-    <a
-      className={` ${linkStyle["a-link"]} ${linkStyle[`a-${linkType}`]}`}
-      href={`${url}`}
-    >
-      {text}{" "}
-      <Icon className={` ${linkStyle["a--icon"]}`} name={`${iconType}`} />
+    <a className={` ${linkStyle["a-link"]} ${linkStyle[`a__${linkType}`]}`} href={`${url}`}>
+      {text} <Icon className={` ${linkStyle["a--icon"]}`} name={`${iconType}`} />
     </a>
   );
 };
